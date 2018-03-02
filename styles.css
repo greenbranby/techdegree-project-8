@@ -1,3 +1,5 @@
+/*----------BASIC PAGE STYLES AND STRUCTURE-----------------*/
+
 body {
   margin: 0;
   padding: 0;
@@ -5,11 +7,13 @@ body {
   font-family: 'Roboto Slab', serif;
   font-weight: 300;
   color: #111;
-  background: #edeff0;
+  background: url(svgs/background.svg);
+  background-color: #edeff0;
 }
 
 #container {
   max-width: 960px;
+  min-width: 425px;
   background: #fff;
   margin: 0 auto;
   height: 100%; /* new line */
@@ -26,10 +30,25 @@ a {
   text-decoration: none;
   color: #39add1;
   font-weight: 700;
+  padding-left: 5px;
 }
 
-a:hover {
-  color: #111;
+nav {
+  display: flex;
+  flex-direction: row;
+}
+
+ul  {
+  list-style-type: none;
+  display: flex;
+}
+
+.main-nav {
+  padding-top: 10px;
+}
+
+.main-nav li {
+  margin-left: 20px;
 }
 
 header {
@@ -59,4 +78,123 @@ footer {
   margin-top: 100px;
   padding-bottom: 30px;
   color: #ba8058;
+}
+
+/*----------NAV SVG STYLES-----------------*/
+
+.main-nav li {
+  transition: .5s ease-out;
+}
+
+.main-nav li:hover  {
+  transform: scale(1.2);
+  color: #ff0000;
+}
+
+.home,
+.visit-us,
+.contact-us  {
+  transition: .5s ease-out;
+}
+
+a {
+  transition: .5s ease-out;
+}
+
+a:hover {
+  color: #ff0000;
+}
+
+.home:hover .heart-icon,
+.visit-us:hover .visit-icon,
+.contact-us:hover .contact-icon {
+  fill: #ff0000;
+}
+
+/*----------LOGO SVG STYLES-----------------*/
+
+.paw-logo-headline {
+  display:block;
+}
+
+.paw-print {
+  transition: transform .5s .3s ease-out;
+}
+
+.paw-print {
+    transform-origin: 50% 50%;
+}
+
+.paw-logo:hover .paw-print{
+    transform: rotate(360deg);
+}
+
+.circle {
+  transition: .1s ease-out;
+}
+
+.circle:hover {
+  fill: #844c29;
+}
+
+.paw-logo {
+  transition: transform .3s ease-out;
+}
+
+.paw-logo:hover {
+    transform: scale(1.2);
+}
+
+
+/*----------CORGI SVG STYLES-----------------*/
+
+.corgi li {
+  display: flex;
+  flex-direction: column;
+  padding-right: 20px;
+}
+
+.corgi {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.corgi-svg {
+  justify-content: space-between;
+}
+
+span {
+  padding-right: 30px;
+  font-size: 14px;
+  color: #ba8056;
+}
+
+.corgi-logo-text {
+  display: none;
+}
+
+/*----------CORGI SVG COLOR STYLES-----------------*/
+
+.sable {
+  color: #ba8056;
+}
+.fawn {
+  color: #eaaa7f;
+}
+.red {
+  color: #844c29;
+}
+.stone {
+  color: #52595f;
+}
+
+/*----------MEDIA QUERIES-----------------*/
+
+@media (min-width:768px) {
+  .corgi-logo-text {
+    display: block;
+  }
+  .paw-logo-headline {
+    display: none;
+  }
 }
