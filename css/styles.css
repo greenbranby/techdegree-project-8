@@ -190,7 +190,7 @@ span {
 
 /*----------MEDIA QUERIES-----------------*/
 
-@media (min-width:768px) {
+@media (min-width:425px) {
   .corgi-logo-text {
     display: block;
   }
