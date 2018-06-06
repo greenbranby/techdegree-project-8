@@ -7,7 +7,7 @@ body {
   font-family: 'Roboto Slab', serif;
   font-weight: 300;
   color: #111;
-  background: url(svgs/background.svg);
+  background: url('svgs/background.svg');
   background-color: #edeff0;
 }
 
