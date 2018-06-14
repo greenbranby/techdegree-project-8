@@ -3,6 +3,7 @@
 body {
   margin: 0;
   padding: 0;
+  min-width: 400px;
   text-align: center;
   font-family: 'Roboto Slab', serif;
   font-weight: 300;
@@ -177,20 +178,35 @@ span {
 
 .sable {
   color: #ba8056;
+  opacity: 1;
+  transition: 0.3s;
 }
 .fawn {
   color: #eaaa7f;
+  opacity: 1;
+  transition: 0.3s;
 }
 .red {
   color: #844c29;
+  opacity: 1;
+  transition: 0.3s;
 }
 .stone {
   color: #52595f;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.sable:hover,
+.fawn:hover,
+.red:hover,
+.stone:hover {
+  opacity: 0.8;
 }
 
 /*----------MEDIA QUERIES-----------------*/
 
-@media (min-width:425px) {
+@media (min-width:768px) {
   .corgi-logo-text {
     display: block;
   }
