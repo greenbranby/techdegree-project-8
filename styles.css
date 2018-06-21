@@ -107,8 +107,8 @@ a:hover {
 }
 
 .home:hover .heart-icon,
-.visit-us:hover, .visit-us:active, .visit-icon,
-.contact-us:hover, contact-us:active, .contact-icon {
+.visit-us:hover, .visit-icon,
+.contact-us:hover, .contact-icon {
   fill: #ff0000;
 }
 
@@ -126,7 +126,7 @@ a:hover {
     transform-origin: 50% 50%;
 }
 
-.paw-logo:hover .paw-print, .paw-logo:active .paw-print {
+.paw-logo:hover .paw-print {
     transform: rotate(360deg);
 }
 
@@ -134,8 +134,7 @@ a:hover {
   transition: .1s ease-out;
 }
 
-.circle:hover,
-.circle:active{
+.circle:hover{
   fill: #844c29;
 }
 
@@ -143,8 +142,7 @@ a:hover {
   transition: transform .3s ease-out;
 }
 
-.paw-logo:hover,
-.paw-logo:active{
+.paw-logo.hover{
     transform: scale(1.2);
 }
 
@@ -199,10 +197,10 @@ span {
   transition: 0.3s;
 }
 
-.sable:hover,.sable:active,
-.fawn:hover, .fawn:active,
-.red:hover, .red:active,
-.stone:hover, .stone:active {
+.sable:hover,
+.fawn:hover,
+.red:hover,
+.stone:hover {
   opacity: 0.5;
 }
 
