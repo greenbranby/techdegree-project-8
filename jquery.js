@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-  $(".paw-logo", ".sable", ".fawn", ".red", '.stone').on("mouseenter mouseleave touchstart", function(e){
+  $(".paw-logo" ).on("mouseenter mouseleave touchstart", function(e){
     if(e.type == 'touchstart') {
       $(this).off('mouseenter mouseleave');
     }
