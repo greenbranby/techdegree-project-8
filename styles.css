@@ -197,14 +197,10 @@ span {
   transition: 0.3s;
 }
 
-.sable:hover,
-.fawn:hover,
-.red:hover,
-.stone:hover,
-.sable:active,
-.fawn:active,
-.red:active,
-.stone:active {
+.sable.hover,
+.fawn.hover,
+.red.hover,
+.stone.hover {
   opacity: 0.5;
 }
 
