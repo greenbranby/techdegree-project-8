@@ -200,7 +200,11 @@ span {
 .sable:hover,
 .fawn:hover,
 .red:hover,
-.stone:hover {
+.stone:hover,
+.sable:active,
+.fawn:active,
+.red:active,
+.stone:active {
   opacity: 0.5;
 }
 
