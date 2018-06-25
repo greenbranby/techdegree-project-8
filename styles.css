@@ -45,6 +45,7 @@ nav {
 ul  {
   list-style-type: none;
   display: flex;
+  padding:0;
 }
 
 .main-nav {
@@ -211,12 +212,12 @@ span {
 /*----------MEDIA QUERIES-----------------*/
 
 @media (min-width:768px) {
-  .corgi-logo-text {
-    display: block;
-  }
-  .paw-logo-headline {
-    display: none;
-  }
+.corgi-logo-text {
+  display: block;
+}
+.paw-logo-headline {
+  display: none;
+}
 nav {
   font-size: 18px;
 }
