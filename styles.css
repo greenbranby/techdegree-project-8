@@ -3,7 +3,7 @@
 body {
   margin: 0;
   padding: 0;
-  min-width: 400px;
+  min-width: 320px;
   text-align: center;
   font-family: 'Roboto Slab', serif;
   font-weight: 300;
@@ -14,7 +14,7 @@ body {
 
 #container {
   max-width: 960px;
-  min-width: 425px;
+  min-width: 320px;
   background: #fff;
   margin: 0 auto;
   height: 100%; /* new line */
@@ -35,8 +35,11 @@ a {
 }
 
 nav {
+  font-size: 16px;
   display: flex;
   flex-direction: row;
+  flex-wrap:nowrap;
+  justify-content:center;
 }
 
 ul  {
@@ -106,9 +109,10 @@ a:hover {
   color: #ff0000;
 }
 
+
 .home:hover .heart-icon,
-.visit-us:hover, .visit-icon,
-.contact-us:hover, .contact-icon {
+.visit-us:hover .visit-icon,
+.contact-us:hover .contact-icon {
   fill: #ff0000;
 }
 
@@ -178,30 +182,30 @@ span {
 
 .sable {
   color: #ba8056;
-  opacity: 1;
-  transition: 0.3s;
+  transform-origin: 50% 50%;
+  transition: 0.5s;
 }
 .fawn {
   color: #eaaa7f;
-  opacity: 1;
-  transition: 0.3s;
+  transform-origin: 50% 50%;
+  transition: 0.5s;
 }
 .red {
   color: #844c29;
-  opacity: 1;
-  transition: 0.3s;
+  transform-origin: 50% 50%;
+  transition: 0.5s;
 }
 .stone {
   color: #52595f;
-  opacity: 1;
-  transition: 0.3s;
+  transform-origin: 50% 50%;
+  transition: 0.5s;
 }
 
-.sable.hover,
-.fawn.hover,
-.red.hover,
-.stone.hover {
-  opacity: 0.5;
+.sable:hover,
+.fawn:hover,
+.red:hover,
+.stone:hover {
+  transform: rotate(360deg);
 }
 
 /*----------MEDIA QUERIES-----------------*/
@@ -213,4 +217,8 @@ span {
   .paw-logo-headline {
     display: none;
   }
+nav {
+  font-size: 18px;
+}
+
 }
